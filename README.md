@@ -8,7 +8,7 @@ The annotation could be downloaded in release.
 The dataset could be downloaded in here:
 [EyeQ](https://github.com/HzFu/EyeQ?tab=readme-ov-file), 
 [BRSET](https://physionet.org/content/brazilian-ophthalmological/1.0.1/), 
-[mBRSET](https://physionet.org/content/mbrset/1.0/).
+[mBRSET](https://physionet.org/content/mbrset/1.0/). For EyeQ, please follow the official preprocessing script to get the resized image. For BRSET and mBRSET, no preprocessing is needed.
 
 ## Acknowledgement
 We build our annotation based on public available datasets and our method on EFIQA, we sincerely thank the authors for their contribution to the field. BRSET and mBRSET is published on PhysioNet.
