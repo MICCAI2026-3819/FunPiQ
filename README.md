@@ -10,6 +10,37 @@ The dataset could be downloaded in here:
 [BRSET](https://physionet.org/content/brazilian-ophthalmological/1.0.1/), 
 [mBRSET](https://physionet.org/content/mbrset/1.0/). For EyeQ, please follow the official preprocessing script to get the resized image. For BRSET and mBRSET, no preprocessing is needed.
 
+## Annotation Format
+The annotation is stored as Indexed PNG. You can read it with PIL:
+```python
+from PIL import Image
+import numpy as np
+
+# Load the indexed PNG mask
+mask_path = 'path/to/annotation.png'
+pil_mask = Image.open(mask_path)
+
+# Convert to a numpy array where values are the exact class indices
+mask_array = np.array(pil_mask)
+
+# (Optional) Retrieve the exact color palette for visualization purposes
+palette = pil_mask.getpalette()
+```
+⚠️ Important Note on Data Loading: We highly recommend using PIL (Pillow) as demonstrated above. Loading these specific masks with standard OpenCV functions (e.g., cv2.imread) without strict grayscale or unchanged flags will often flatten the palette or interpolate values, permanently corrupting the distinct class integer mappings required for training and evaluation.
+
+
+### Class Label Mapping
+The pixel values in the extracted numpy array map to the following categories:
+| Pixel Value | RGB Color      | Visual | Class Name             |
+|-------------|----------------|--------|------------------------|
+| 0           | (0, 0, 0)      | Black  | Background             |
+| 1           | (106, 153, 78) | Green  | Good Quality           |
+| 2           | (232, 168, 56) | Yellow | Usable Quality         |
+| 3           | (193, 69, 69)  | Red    | Bad Quality            |
+
+
+
+
 ## Acknowledgement
 We build our annotation based on public available datasets and our method on EFIQA, we sincerely thank the authors for their contribution to the field. BRSET and mBRSET is published on PhysioNet.
 ```
