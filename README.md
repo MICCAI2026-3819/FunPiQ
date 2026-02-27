@@ -3,7 +3,7 @@
 > Abstract: Color fundus photography (CFP) is the most common ophthalmic imaging modality for large-scale screening. However, it is highly susceptible to degradations, making robust fundus image quality assessment (FIQA) crucial. The criteria for what constitutes high-quality at the image level vary across clinical tasks, making FIQA dependent on expert knowledge. This motivated the development of automated methods and datasets. While existing datasets aim to standardize image-level quality, their criteria often differ. Furthermore, image-level labels preclude the quantitative evaluation of localized degradations, which is essential for trustworthy FIQA. We argue that pixel-level FIQA based on anatomical visibility represents a more task-agnostic, explainable approach. In this work, we introduce FunPiQ, the first FIQA benchmark to provide pixel-level quality annotations. In addition, we propose EFIQA-CP, an explainable-by-design (EBD) method that uses quality pseudo-labels based on anatomical visibility to train a CNN via Non-Negative Positive-Unlabeled learning. Extensive evaluations of classification methods with post-hoc explanations, anomaly detection methods, and EBD methods demonstrate the superior performance of the latter and, particularly, of EFIQA-CP.
 
 ## Download the dataset
-The annotation could be downloaded in release.
+The annotation could be downloaded in [release](https://github.com/MICCAI2026-3819/FunPiQ/releases/tag/v0.0.0).
 
 The dataset could be downloaded in here:
 [EyeQ](https://github.com/HzFu/EyeQ?tab=readme-ov-file), 
