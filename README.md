@@ -1,5 +1,9 @@
 ![](title.png)
-[Code](https://github.com/MICCAI2026-3819/FunPiQ/tree/main/EFIQA_CP) • [Weights](https://github.com/MICCAI2026-3819/FunPiQ/releases/tag/weights) • [Dataset](https://github.com/MICCAI2026-3819/FunPiQ/releases/tag/v0.0.0)
+<p align="center">
+  <a href="https://github.com/MICCAI2026-3819/FunPiQ/tree/main/Source_Code">Code</a> •
+  <a href="https://github.com/MICCAI2026-3819/FunPiQ/releases/tag/weights">Weights</a> •
+  <a href="https://github.com/MICCAI2026-3819/FunPiQ/releases/tag/v0.0.0">Dataset</a>
+</p>
 
 ![](GraphicalAbstract.png)
 #  FunPiQ: A New Benchmark for Pixel-Level Quality Assessment in Fundus Images
