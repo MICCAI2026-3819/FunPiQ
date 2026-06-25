@@ -1,5 +1,6 @@
 ![](title.png)
 <p align="center">
+  <a href="https://arxiv.org/abs/2606.25915">arXiv</a> •
   <a href="https://github.com/MICCAI2026-3819/FunPiQ/tree/main/Source_Code">Code</a> •
   <a href="https://github.com/MICCAI2026-3819/FunPiQ/releases/tag/weights">Weights</a> •
   <a href="https://github.com/MICCAI2026-3819/FunPiQ/releases/tag/v0.0.0">Dataset</a>
